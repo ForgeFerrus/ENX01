@@ -1,0 +1,326 @@
+
+ Visual Studio 2022 Developer Command Prompt v17.11.6
+ Copyright (c) 2022 Microsoft Corporation
+
+
+DForge FerrusMy ProjectGeant4my_projectENX01buildmsbuild ENX01.sln
+MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+Build started 20.12.2024 14701.
+
+Project DForge FerrusMy ProjectGeant4my_projectENX01buildENX01.sln on node 1 (default targets).
+ValidateSolutionConfiguration
+  Building solution configuration Releasex64.
+ValidateProjects
+  The project INSTALL is not selected for building in solution configuration Releasex64.
+Project DForge FerrusMy ProjectGeant4my_projectENX01buildENX01.sln (1) is building DForge FerrusMy Projec
+tGeant4my_projectENX01buildENX01.vcxproj.metaproj (2) on node 1 (default targets).
+Project DForge FerrusMy ProjectGeant4my_projectENX01buildENX01.vcxproj.metaproj (2) is building DForge Fer
+rusMy ProjectGeant4my_projectENX01buildZERO_CHECK.vcxproj (3) on node 1 (default targets).
+PrepareForBuild
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See httpsak
+  a.mscppstructured-output for more details.
+InitializeBuildStatus
+  Creating x64ReleaseZERO_CHECKZERO_CHECK.tlogunsuccessfulbuild because AlwaysCreate was specified.
+  Touching x64ReleaseZERO_CHECKZERO_CHECK.tlogunsuccessfulbuild.
+CustomBuild
+  All outputs are up-to-date.
+FinalizeBuildStatus
+  Deleting file x64ReleaseZERO_CHECKZERO_CHECK.tlogunsuccessfulbuild.
+  Touching x64ReleaseZERO_CHECKZERO_CHECK.tlogZERO_CHECK.lastbuildstate.
+Done Building Project DForge FerrusMy ProjectGeant4my_projectENX01buildZERO_CHECK.vcxproj (default targets).
+
+Project DForge FerrusMy ProjectGeant4my_projectENX01buildENX01.vcxproj.metaproj (2) is building DForge Fer
+rusMy ProjectGeant4my_projectENX01buildENX01.vcxproj (4) on node 1 (default targets).
+PrepareForBuild
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See httpsak
+  a.mscppstructured-output for more details.
+InitializeBuildStatus
+  Creating ENX01.dirReleaseENX01.tlogunsuccessfulbuild because AlwaysCreate was specified.
+  Touching ENX01.dirReleaseENX01.tlogunsuccessfulbuild.
+CustomBuild
+  All outputs are up-to-date.
+ClCompile
+  All outputs are up-to-date.
+Link
+  All outputs are up-to-date.
+  ENX01.vcxproj - DForge FerrusMy ProjectGeant4my_projectENX01buildReleaseENX01.exe
+FinalizeBuildStatus
+  Deleting file ENX01.dirReleaseENX01.tlogunsuccessfulbuild.
+  Touching ENX01.dirReleaseENX01.tlogENX01.lastbuildstate.
+Done Building Project DForge FerrusMy ProjectGeant4my_projectENX01buildENX01.vcxproj (default targets).
+
+Done Building Project DForge FerrusMy ProjectGeant4my_projectENX01buildENX01.vcxproj.metaproj (default target
+s).
+
+Project DForge FerrusMy ProjectGeant4my_projectENX01buildENX01.sln (1) is building DForge FerrusMy Projec
+tGeant4my_projectENX01buildALL_BUILD.vcxproj.metaproj (5) on node 1 (default targets).
+Project DForge FerrusMy ProjectGeant4my_projectENX01buildALL_BUILD.vcxproj.metaproj (5) is building DForge
+ FerrusMy ProjectGeant4my_projectENX01buildALL_BUILD.vcxproj (6) on node 1 (default targets).
+PrepareForBuild
+  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See httpsak
+  a.mscppstructured-output for more details.
+InitializeBuildStatus
+  Creating x64ReleaseALL_BUILDALL_BUILD.tlogunsuccessfulbuild because AlwaysCreate was specified.
+  Touching x64ReleaseALL_BUILDALL_BUILD.tlogunsuccessfulbuild.
+CustomBuild
+  All outputs are up-to-date.
+FinalizeBuildStatus
+  Deleting file x64ReleaseALL_BUILDALL_BUILD.tlogunsuccessfulbuild.
+  Touching x64ReleaseALL_BUILDALL_BUILD.tlogALL_BUILD.lastbuildstate.
+Done Building Project DForge FerrusMy ProjectGeant4my_projectENX01buildALL_BUILD.vcxproj (default targets).
+
+Done Building Project DForge FerrusMy ProjectGeant4my_projectENX01buildALL_BUILD.vcxproj.metaproj (default ta
+rgets).
+
+Done Building Project DForge FerrusMy ProjectGeant4my_projectENX01buildENX01.sln (default targets).
+
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 000005.04
+
+DForge FerrusMy ProjectGeant4my_projectENX01buildcd Release
+
+DForge FerrusMy ProjectGeant4my_projectENX01buildRelease.ENX01
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+DForge FerrusMy ProjectGeant4my_projectENX01buildRelease .ENX01
+Available UI session types [ Win32, csh ]
+G4WT3  runverbose 2
+G4WT2  runverbose 2
+G4WT1  runverbose 2
+G4WT0  runverbose 2
+G4WT3  eventverbose 0
+G4WT2  eventverbose 0
+G4WT1  eventverbose 0
+G4WT0  eventverbose 0
+G4WT3  trackingverbose 1
+G4WT2  trackingverbose 1
+G4WT1  trackingverbose 1
+G4WT0  trackingverbose 1
+G4WT3  gunparticle gamma
+G4WT2  gunparticle gamma
+G4WT1  gunparticle gamma
+G4WT0  gunparticle gamma
+G4WT3  gunenergy 6 MeV
+G4WT2  gunenergy 6 MeV
+G4WT1  gunenergy 6 MeV
+G4WT0  gunenergy 6 MeV
+G4WT1  ### Run 0 starts on worker thread 1.
+G4WT1 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+ G4Exception  Analysis_W001
+      issued by  G4GenericAnalysisManagerCreateNtupleFileManager
+Ntuple merging is not available with xml output.
+Setting is ignored.
+ This is just a warning message. 
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT1  ... open analysis file  EnergySpectrum.xml - done
+G4WT1  ... create file  EnergySpectrum_nt_Absolute Energies_t1.xml - done
+G4WT1  ... create file  EnergySpectrum_nt_Relative Energies_t1.xml - done
+G4WT2  ### Run 0 starts on worker thread 2.
+G4WT2 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+ G4Exception  Analysis_W001
+      issued by  G4GenericAnalysisManagerCreateNtupleFileManager
+Ntuple merging is not available with xml output.
+Setting is ignored.
+ This is just a warning message. 
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT2  ... open analysis file  EnergySpectrum.xml - done
+G4WT0  ### Run 0 starts on worker thread 0.
+G4WT0 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+ G4Exception  Analysis_W001
+      issued by  G4GenericAnalysisManagerCreateNtupleFileManager
+Ntuple merging is not available with xml output.
+Setting is ignored.
+ This is just a warning message. 
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT0  ... open analysis file  EnergySpectrum.xml - done
+G4WT3  ### Run 0 starts on worker thread 3.
+G4WT3 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+ G4Exception  Analysis_W001
+      issued by  G4GenericAnalysisManagerCreateNtupleFileManager
+Ntuple merging is not available with xml output.
+Setting is ignored.
+ This is just a warning message. 
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4WT3  ... open analysis file  EnergySpectrum.xml - done
+G4WT1 
+G4WT1  
+G4WT3  ... create file  EnergySpectrum_nt_Absolute Energies_t3.xml - done
+G4WT0  ... create file  EnergySpectrum_nt_Absolute Energies_t0.xml - done
+G4WT2  ... create file  EnergySpectrum_nt_Absolute Energies_t2.xml - done
+G4WT1   G4Track Information   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT3  ... create file  EnergySpectrum_nt_Relative Energies_t3.xml - done
+G4WT1  
+G4WT3 
+G4WT1 
+G4WT3  
+G4WT1  Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT3   G4Track Information   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1      0   -0.347    0.229      -50         6        0        0         0      Target initStep
+G4WT3  
+G4WT3 
+G4WT3  Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT3      0  -0.0438  0.00156      -50         6        0        0         0      Target initStep
+G4WT2  ... create file  EnergySpectrum_nt_Relative Energies_t2.xml - done
+G4WT0  ... create file  EnergySpectrum_nt_Relative Energies_t0.xml - done
+G4WT2 
+G4WT2  
+G4WT0 
+G4WT0  
+G4WT0   G4Track Information   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT2   G4Track Information   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0  
+G4WT0 
+G4WT2  
+G4WT0  Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT2 
+G4WT0      0   0.0979   0.0432      -50         6        0        0         0      Target initStep
+G4WT2  Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT2      0    0.107   -0.445      -50         6        0        0         0      Target initStep
+G4WT3      1  -0.0438  0.00156    -49.2         6        0     0.75      0.75       World Transportation
+G4WT2      1    0.107   -0.445    -49.2         6        0     0.75      0.75       World Transportation
+G4WT0      1   0.0979   0.0432    -49.2         6        0     0.75      0.75       World Transportation
+G4WT1      1   -0.347    0.229    -49.2         6        0     0.75      0.75       World Transportation
+G4WT0      2   0.0979   0.0432     -0.5         6        0     48.8      49.5      Target Transportation
+G4WT2      2    0.107   -0.445     -0.5         6        0     48.8      49.5      Target Transportation
+G4WT1      2   -0.347    0.229     -0.5         6        0     48.8      49.5      Target Transportation
+G4WT3      2  -0.0438  0.00156     -0.5         6        0     48.8      49.5      Target Transportation
+G4WT0      3   0.0979   0.0432      0.5         6        0        1      50.5       World Transportation
+G4WT2      3    0.107   -0.445      0.5         6        0        1      50.5       World Transportation
+G4WT1      3   -0.347    0.229      0.5         6        0        1      50.5       World Transportation
+G4WT3      3  -0.0438  0.00156      0.5         6        0        1      50.5       World Transportation
+G4WT0      4   0.0979   0.0432     49.2         6        0     48.8      99.2    Detector Transportation
+G4WT2      4    0.107   -0.445     49.2         6        0     48.8      99.2    Detector Transportation
+G4WT1      4   -0.347    0.229     49.2         6        0     48.8      99.2    Detector Transportation
+G4WT3      4  -0.0438  0.00156     49.2         6        0     48.8      99.2    Detector Transportation
+G4WT0      5   0.0979   0.0432     50.8         6        0      1.5       101       World Transportation
+G4WT2      5    0.107   -0.445     50.8         6        0      1.5       101       World Transportation
+G4WT1      5   -0.347    0.229     50.8         6        0      1.5       101       World Transportation
+G4WT3      5  -0.0438  0.00156     50.8         6        0      1.5       101       World Transportation
+G4WT0 
+G4WT0  
+G4WT0   G4Track Information   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0  
+G4WT0 
+G4WT0  Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0      0    0.173   0.0559      -50         6        0        0         0      Target initStep
+G4WT0      1    0.173   0.0559    -49.2         6        0     0.75      0.75       World Transportation
+G4WT0      2    0.173   0.0559     -0.5         6        0     48.8      49.5      Target Transportation
+G4WT0      3    0.173   0.0559      0.5         6        0        1      50.5       World Transportation
+G4WT0      4    0.173   0.0559     49.2         6        0     48.8      99.2    Detector Transportation
+G4WT0      5    0.173   0.0559     50.8         6        0      1.5       101       World Transportation
+G4WT1  [thread 1] Thread-local run terminated.
+G4WT2  [thread 2] Thread-local run terminated.
+G4WT0  [thread 0] Thread-local run terminated.
+G4WT3  [thread 3] Thread-local run terminated.
+G4WT3  [thread 3] Run Summary
+G4WT2  [thread 2] Run Summary
+G4WT0  [thread 0] Run Summary
+G4WT1  [thread 1] Run Summary
+G4WT3  [thread 3]   Number of events processed  1
+G4WT2  [thread 2]   Number of events processed  1
+G4WT0  [thread 0]   Number of events processed  2
+G4WT1  [thread 1]   Number of events processed  1
+G4WT3  [thread 3]   User=0.000000s Real=0.120636s Sys=0.000000s [Cpu=0.0%]
+G4WT2  [thread 2]   User=0.000000s Real=0.015993s Sys=0.000000s [Cpu=0.0%]
+G4WT0  [thread 0]   User=0.000000s Real=0.107620s Sys=0.000000s [Cpu=0.0%]
+G4WT1  [thread 1]   User=0.000000s Real=0.141495s Sys=0.047000s [Cpu=33.2%]
+G4WT3  ... write file  EnergySpectrum_nt_Absolute Energies_t3.xml - done
+G4WT2  ... write file  EnergySpectrum_nt_Absolute Energies_t2.xml - done
+G4WT0  ... write file  EnergySpectrum_nt_Absolute Energies_t0.xml - done
+G4WT1  ... write file  EnergySpectrum_nt_Absolute Energies_t1.xml - done
+G4WT3  ... write file  EnergySpectrum_nt_Relative Energies_t3.xml - done
+G4WT2  ... write file  EnergySpectrum_nt_Relative Energies_t2.xml - done
+G4WT0  ... write file  EnergySpectrum_nt_Relative Energies_t0.xml - done
+G4WT1  ... write file  EnergySpectrum_nt_Relative Energies_t1.xml - done
+G4WT3  ... close file  EnergySpectrum_nt_Absolute Energies_t3.xml - done
+G4WT2  ... close file  EnergySpectrum_nt_Absolute Energies_t2.xml - done
+G4WT0  ... close file  EnergySpectrum_nt_Absolute Energies_t0.xml - done
+G4WT1  ... close file  EnergySpectrum_nt_Absolute Energies_t1.xml - done
+G4WT3  ... close file  EnergySpectrum_nt_Relative Energies_t3.xml - done
+G4WT2  ... close file  EnergySpectrum_nt_Relative Energies_t2.xml - done
+G4WT0  ... close file  EnergySpectrum_nt_Relative Energies_t0.xml - done
+G4WT1  ... close file  EnergySpectrum_nt_Relative Energies_t1.xml - done
+G4WT3  ... delete empty file  EnergySpectrum_nt_Absolute Energies_t3.xml - done
+G4WT2  ... delete empty file  EnergySpectrum_nt_Absolute Energies_t2.xml - done
+G4WT0  ... delete empty file  EnergySpectrum_nt_Absolute Energies_t0.xml - done
+G4WT1  ... delete empty file  EnergySpectrum_nt_Absolute Energies_t1.xml - done
+G4WT3  ... delete empty file  EnergySpectrum_nt_Relative Energies_t3.xml - done
+G4WT2  ... delete empty file  EnergySpectrum_nt_Relative Energies_t2.xml - done
+G4WT0  ... delete empty file  EnergySpectrum_nt_Relative Energies_t0.xml - done
+G4WT1  ... delete empty file  EnergySpectrum_nt_Relative Energies_t1.xml - done
+G4WT3  analysish1getVector
+G4WT2  analysish1getVector
+G4WT0  analysish1getVector
+G4WT1  analysish1getVector
+G4WT3  analysish2getVector
+G4WT2  analysish2getVector
+G4WT2  gunparticle proton
+G4WT1  analysish2getVector
+G4WT3  gunparticle proton
+G4WT0  analysish2getVector
+G4WT2  gunenergy 210 MeV
+G4WT1  gunparticle proton
+G4WT3  gunenergy 210 MeV
+G4WT0  gunparticle proton
+G4WT2  trackingverbose 2
+G4WT1  gunenergy 210 MeV
+G4WT3  trackingverbose 2
+G4WT0  gunenergy 210 MeV
+G4WT1  trackingverbose 2
+G4WT0  trackingverbose 2
+G4WT1  analysish1getVector
+G4WT1  analysish2getVector
+G4WT1  gunparticle proton
+G4WT1  gunenergy 210 MeV
+G4WT1  trackingverbose 2
+G4WT1  ### Run 1 starts on worker thread 1.
+G4WT1  ... open analysis file  EnergySpectrum.xml - done
+G4WT1  ... create file  EnergySpectrum_nt_Absolute Energies_t1.xml - done
+G4WT1  ... create file  EnergySpectrum_nt_Relative Energies_t1.xml - done
+G4WT1 
+G4WT1  
+G4WT1   G4Track Information   Particle = proton,   Track ID = 1,   Parent ID = 0
+G4WT1  
+G4WT1 
+G4WT1  Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT1      0    -0.37  -0.0218      -50       210        0        0         0      Target initStep
+G4WT1      1    -0.37  -0.0218    -49.2       206     4.13     0.75      0.75       World Transportation
+G4WT1      2    -1.13    0.449     -0.5       206 3.07e-24     48.8      49.5      Target Transportation
+G4WT1      3    -1.15    0.458      0.5       201     4.59        1      50.5       World Transportation
+G4WT1      4    -2.12   -0.488     49.2       201 3.12e-24     48.8      99.3    Detector Transportation
+G4WT1      5    -2.15   -0.518     50.8       194     7.37      1.5       101       World Transportation
+G4WT0  [thread 0] Thread-local run terminated.
+G4WT0  [thread 0] Run Summary
+G4WT1  [thread 1] Thread-local run terminated.
+G4WT1  [thread 1] Run Summary
+G4WT2  [thread 2] Thread-local run terminated.
+G4WT2  [thread 2] Run Summary
+G4WT2  [thread 2]   Number of events processed  1
+G4WT1  [thread 1]   Number of events processed  1
+G4WT0  [thread 0]   Number of events processed  2
+G4WT3  [thread 3] Thread-local run terminated.
+G4WT3  [thread 3] Run Summary
+G4WT3  [thread 3]   Number of events processed  1
+G4WT0  [thread 0]   User=0.015000s Real=0.698229s Sys=0.250000s [Cpu=38.0%]
+G4WT2  [thread 2]   User=0.015000s Real=0.606600s Sys=0.250000s [Cpu=43.7%]
+G4WT1  [thread 1]   User=0.000000s Real=0.037396s Sys=0.000000s [Cpu=0.0%]
+G4WT3  [thread 3]   User=0.015000s Real=0.711271s Sys=0.250000s [Cpu=37.3%]
+G4WT1  ... write file  EnergySpectrum_nt_Absolute Energies_t1.xml - done
+G4WT1  ... write file  EnergySpectrum_nt_Relative Energies_t1.xml - done
+G4WT1  ... close file  EnergySpectrum_nt_Absolute Energies_t1.xml - done
+G4WT1  ... close file  EnergySpectrum_nt_Relative Energies_t1.xml - done
+G4WT1  ... delete empty file  EnergySpectrum_nt_Absolute Energies_t1.xml - done
+G4WT1  ... delete empty file  EnergySpectrum_nt_Relative Energies_t1.xml - done
