@@ -2,7 +2,6 @@
 #define ENX01_RUN_ACTION_HH
 
 #include "G4UserRunAction.hh"
-
 #include "G4AnalysisManager.hh"
 
 

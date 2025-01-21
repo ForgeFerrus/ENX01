@@ -17,6 +17,7 @@ namespace ENX01
 	private:
 		G4LogicalVolume* fBremsVolume = nullptr;
 		void ConstructSDandField();
+		G4VPhysicalVolume* Construct(int argc, char** argv);
 	};
 }
 

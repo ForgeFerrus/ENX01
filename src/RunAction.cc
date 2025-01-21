@@ -1,4 +1,3 @@
-
 #include "RunAction.hh"
 #include "PrimaryGeneratorAction.hh"
 #include "G4ThreeVector.hh"
@@ -10,35 +9,39 @@
 #include "G4UnitsTable.hh"
 #include "Randomize.hh"
 
-namespace ENX01 
+namespace ENX01
 {
-	RunAction::RunAction() 
-	{
-	auto analysisManager = G4AnalysisManager::Instance();
-		analysisManager->SetDefaultFileType("root");
-		analysisManager->SetNtupleMerging(true);
-		analysisManager->SetVerboseLevel(0);
-		analysisManager->SetFileName("EnergySpectrum");
-
-	const G4int ntupleId1 = analysisManager->CreateNtuple("Absolute Energies", "Gamma Energies");
-		analysisManager->CreateNtupleDColumn(ntupleId1, "AbsEnergy");
-		analysisManager->FinishNtuple(ntupleId1);
-
-	const G4int ntupleId2 = analysisManager->CreateNtuple("Relative Energies", "Gamma Energies");
-		analysisManager->CreateNtupleDColumn(ntupleId2, "RelEnergy");
-		analysisManager->FinishNtuple(ntupleId2);
-	}
-	RunAction::~RunAction() {
-	}
-	void RunAction::BeginOfRunAction(const G4Run* aRun) 
-	{
-		auto analysisManager = G4AnalysisManager::Instance();
-		analysisManager->OpenFile();
-	}
-	void RunAction::EndOfRunAction(const G4Run* aRun) 
-	{
-		auto analysisManager = G4AnalysisManager::Instance();
-		analysisManager->Write();
-		analysisManager->CloseFile();
-	}
+    RunAction::RunAction()
+	{ // Створення аналізатора
+    auto analysisManager = G4AnalysisManager::Instance();
+        analysisManager->SetDefaultFileType("root");
+        analysisManager->SetNtupleMerging(true);
+        analysisManager->SetVerboseLevel(0);
+        analysisManager->SetFileName("EnergySpectrum");
+    // Конструктор класу RunAction налаштовує менеджер аналізу
+    const G4int ntupleId1 = analysisManager->CreateNtuple("Absolute Energies", "Gamma Energies");
+        analysisManager->CreateNtupleDColumn(ntupleId1, "AbsEnergy");
+        analysisManager->FinishNtuple(ntupleId1);
+    const G4int ntupleId2 = analysisManager->CreateNtuple("Relative Energies", "Gamma Energies");
+        analysisManager->CreateNtupleDColumn(ntupleId2, "RelEnergy");
+        analysisManager->FinishNtuple(ntupleId2);
+    }
+    RunAction::~RunAction() {
+    // Чистка ресурсів аналізатора
+    auto analysisManager = G4AnalysisManager::Instance();
+        delete analysisManager;
+    }
+    void RunAction::BeginOfRunAction(const G4Run* aRun)
+    {
+    // Відкриття файлу для зберігання даних
+    auto analysisManager = G4AnalysisManager::Instance();
+        analysisManager->OpenFile();
+    }
+    void RunAction::EndOfRunAction(const G4Run* aRun)
+    {
+    // Запис і закриття файлу з даними
+    auto analysisManager = G4AnalysisManager::Instance();
+        analysisManager->Write();
+        analysisManager->CloseFile();
+    }
 }

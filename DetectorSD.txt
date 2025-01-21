@@ -1,0 +1,80 @@
+#include <G4Step.hh>
+#include <fstream>
+#include <iostream>
+#include <G4SystemOfUnits.hh>
+#include <G4ThreeVector.hh>
+#include <SensitiveDetector.hh>
+#include <memory> // Для розумних покажчиків
+
+using namespace std;
+
+DetectorSD::DetectorSD(G4String name)
+: G4VSensitiveDetector(name), HIST_MAX(100 * MeV), HIST_MIN(0 * MeV) {
+    // Ініціалізація гістограм
+    fill(begin(histogram), end(histogram), 0);
+    fill(begin(histogram_angle), end(histogram_angle), 0);
+}
+
+// Викликається на кожному кроці моделювання частинки, коли вона потрапляє в цей чутливий об'єм
+G4bool DetectorSD::ProcessHits(G4Step* step, G4TouchableHistory* history) {
+    G4cout.flush();
+    G4cout << "ProcessHits called" << G4endl;
+
+    // Отримання кінетичної енергії частинки з попереднього кроку
+    double energy = step->GetPreStepPoint()->GetKineticEnergy();
+    
+    // Визначення ширини біна (інтервалу) гістограми
+    double bin_width = (HIST_MAX - HIST_MIN) / NOBINS;
+    
+    // Перевірка, чи є частинка електроном
+    if (step->GetTrack()->GetDefinition()->GetParticleName() == "e-") {
+        // Визначення індексу (номеру) біна гістограми енергії
+        int index = int(floor((energy - HIST_MIN) / bin_width));
+        
+        // Додавання +1 у відповідний бін
+        if (index >= 0 && index < NOBINS) {
+            histogram[index]++;
+        }
+
+        // Заповнення гістограми кутового розподілу
+        G4ThreeVector ang = step->GetPreStepPoint()->GetMomentumDirection();
+        G4ThreeVector centerVector(0, 0, 1);
+        double angle = ang.angle(centerVector);
+        double bin_width_ang = (3.14) / NOBINS;
+        index = int(floor(angle / bin_width_ang));
+        
+        // Заповнення гістограми
+        if (index >= 0 && index < NOBINS) {
+            histogram_angle[index]++;
+        }
+
+        // Виведення інформації про хіт у термінал 
+        G4cout << "Energy: " << energy / MeV << " MeV, Angle: " << angle << " radians" << G4endl;
+    }
+    
+    // Зупинка та знищення треків частинок після проходження через детектор
+    step->GetTrack()->SetTrackStatus(fStopAndKill);
+    return true;
+}
+
+DetectorSD::~DetectorSD() {
+    G4cout << "Destructor called" << G4endl;
+
+    // Запис гістограми енергії у файл "spectrum.dat"
+    ofstream file("spectrum.dat");
+    double bin_width = (HIST_MAX - HIST_MIN) / NOBINS;
+    for (int i = 0; i < NOBINS; i++) {
+        double energy = i * bin_width + HIST_MIN;
+        file << setw(15) << energy / MeV << " " << setw(15) << histogram[i] << endl;
+    }
+    file.close();
+
+    // Запис гістограми кутів у файл "angle.dat"
+    file.open("angle.dat");
+    bin_width = (3.14) / NOBINS;
+    for (int i = 0; i < NOBINS; i++) {
+        double angle = i * bin_width;
+        file << setw(15) << angle << " " << setw(15) << histogram_angle[i] << endl;
+    }
+    file.close();
+}
